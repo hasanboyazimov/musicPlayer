@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.music-container {
+  width: 400px;
+  text-align: center;
+}
+
+.progress-container {
+  height: 4px;
+  width: 100%;
+  background-color: #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.progress {
+  background-color: tomato;
+  height: inherit;
+  width: 0%;
+  border-radius: inherit;
+  transition: 0.3s;
+}

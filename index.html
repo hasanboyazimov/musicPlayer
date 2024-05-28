@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="music-container" id="music-container">
+      <div>
+        <input id="volume" min="0" max="100" step="1" type="range">
+        <span id="volume-value"></span>
+      </div>
+      <img
+        class="cover"
+        id="cover"
+        width="200"
+        height="200"
+        src="/images/ModernTalking-BrotherLouie.jpg"
+        alt="Album Cover"
+      />
+      <h2 id="title">ModernTalking-BrotherLouie</h2>
+      <audio id="audio" src="/sounds/ModernTalking-BrotherLouie.mp3"></audio>
+      <div id="progress-container" class="progress-container">
+        <div id="progress" class="progress"></div>
+      </div>
+      <div class="control-buttons">
+        <button id="backward"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="play"><i class="fa-solid fa-play"></i></button>
+        <button id="forward"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+    </div>
+    <script src="/js/music.js"></script>
+  </body>
+</html>
